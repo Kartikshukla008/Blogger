@@ -1,0 +1,112 @@
+{% extends 'templates/base.html' %}
+
+{% block content %}
+<div class="container py-5">
+    <!-- Header Section -->
+    <div class="row text-center mb-5">
+        <div class="col-lg-8 mx-auto">
+            <h1 class="display-4">About Our Blog</h1>
+            <p class="lead text-muted">Sharing knowledge, inspiring minds, and building community since 2023</p>
+        </div>
+    </div>
+
+    <!-- Mission Section -->
+    <div class="row mb-5">
+        <div class="col-lg-6">
+            <h2 class="mb-4">Our Mission</h2>
+            <p>At <strong>DjangoBlog</strong>, we believe in the power of sharing knowledge. Our mission is to create a platform where:</p>
+            <ul class="list-unstyled">
+                <li class="mb-2">✔ Writers can share their expertise</li>
+                <li class="mb-2">✔ Readers can discover valuable content</li>
+                <li class="mb-2">✔ The tech community can grow together</li>
+            </ul>
+        </div>
+        <div class="col-lg-6">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
+                 alt="Team working" class="img-fluid rounded shadow">
+        </div>
+    </div>
+
+    <!-- What We Do Section -->
+    <div class="row mb-5 py-4 bg-light rounded-3">
+        <div class="col-12 text-center mb-4">
+            <h2>What We Do</h2>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <i class="fas fa-pen-fancy fa-3x mb-3 text-primary"></i>
+                    <h5>Quality Content</h5>
+                    <p>We publish well-researched articles on Django, Python, web development, and tech trends.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <i class="fas fa-users fa-3x mb-3 text-primary"></i>
+                    <h5>Community Building</h5>
+                    <p>Our platform connects developers worldwide through comments and discussions.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <i class="fas fa-graduation-cap fa-3x mb-3 text-primary"></i>
+                    <h5>Learning Resources</h5>
+                    <p>Free tutorials and guides to help beginners start their coding journey.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <div class="row mb-5">
+        <div class="col-12 text-center mb-4">
+            <h2>Meet Our Team</h2>
+            <p class="text-muted">The passionate people behind the scenes</p>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card border-0 text-center">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" class="card-img-top rounded-circle w-50 mx-auto mt-3" alt="Team member">
+                <div class="card-body">
+                    <h5 class="card-title">Sarah Johnson</h5>
+                    <p class="text-muted">Founder & Editor</p>
+                    <p class="card-text">Python/Django expert with 8+ years of experience in web development.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card border-0 text-center">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" class="card-img-top rounded-circle w-50 mx-auto mt-3" alt="Team member">
+                <div class="card-body">
+                    <h5 class="card-title">Michael Chen</h5>
+                    <p class="text-muted">Lead Developer</p>
+                    <p class="card-text">Full-stack developer specializing in Django REST Framework.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card border-0 text-center">
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" class="card-img-top rounded-circle w-50 mx-auto mt-3" alt="Team member">
+                <div class="card-body">
+                    <h5 class="card-title">Priya Patel</h5>
+                    <p class="text-muted">Content Manager</p>
+                    <p class="card-text">Tech writer passionate about making complex concepts accessible.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="row py-4 bg-primary text-white rounded-3">
+        <div class="col-lg-8 mx-auto text-center">
+            <h3>Ready to join our community?</h3>
+            <p>Start reading our blog posts or contribute your own articles!</p>
+            <a href="{% url 'post_list' %}" class="btn btn-light btn-lg me-2">Read Blog</a>
+            <a href="{% url 'contact' %}" class="btn btn-outline-light btn-lg">Contact Us</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
